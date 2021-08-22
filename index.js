@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 var express = require('express');
 
 var app = express();
@@ -9,7 +8,7 @@ app.set('view engine','ejs');//sent views to EJS
 //this is how a route is built in Express
 app.get('/', (req,res)=>{
   var title = "Our Home Page";
-  res.render('index',{title:title});
+  res.render('pages/index',{title:title});
 });
 
 app.listen(PORT,()=>{
